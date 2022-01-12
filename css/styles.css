@@ -1,0 +1,185 @@
+html {
+    font-size: 16px;
+}
+
+
+/* Redimensión de fuente utilizando rem */
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0;
+    color: aliceblue;
+    text-align: center;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+
+/* clases predefinidas */
+
+* {
+    box-sizing: border-box;
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+/* Clear floats after the columns */
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+/* Diseño de columnas */
+
+.column-1 {
+    width: 100%;
+    float: left;
+}
+
+.column-2 {
+    width: 50%;
+    float: left;
+}
+
+.column-3 {
+    width: 33.33%;
+    float: left;
+}
+
+.column-4 {
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+.column-nav {
+    width: 25%;
+    float: left;
+    text-align: left;
+}
+
+.column-75 {
+    width: 75%;
+    float: left;
+    text-align: left;
+}
+
+.column-5 {
+    width: 20%;
+    float: left;
+}
+
+.column-6 {
+    width: 16.66%;
+    float: left;
+}
+
+
+/* Otras clases */
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    height: 100vh;
+    background-image: url(../img/andrew-svk-0s9oD70F-l4-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#card-1 {
+    background-image: url(../img/jeshoots-com-eCktzGjC-iU-unsplash.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-2 {
+    background-image: url(../img/lorenzo-herrera-p0j-mE6mGo4-unsplash.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-3 {
+    background-image: url(../img/carl-raw-8Gdayy2Lhi0-unsplash.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+#card-4 {
+    background-image: url(../img/alex-azabache-1cPWeb3Ud30-unsplash.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.padding-s {
+    padding: 3%;
+}
+
+.padding-m {
+    padding: 6%;
+}
+
+article {
+    background-color: rgb(277, 277, 227);
+}
+
+#prefooter {
+    background-color: #495057;
+    font-size: 14px;
+}
+
+#prefooter p {
+    font-size: 13px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.back-white {
+    background-color: white;
+}
+
+@media only screen and (max-width: 600px) {
+    /*reglas*/
+    /* column-3 pasará de tener 33.33% a 100% */
+    .column-3 {
+        width: 100%;
+    }
+    /* column-4 pasará de tener 25% a 50% */
+    .column-4 {
+        width: 50%;
+    }
+    .column-nav,
+    .column-75 {
+        width: 100%;
+    }
+}
